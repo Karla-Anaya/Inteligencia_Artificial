@@ -51,11 +51,13 @@
 		["Cocodrilo","Tiene", "P. Queratina"],
 		["Cocodrilo","Tiene","Garras"],
 		["Cocodrilo","Vive","Tierra"],
+		["Cocodrilo","Vive","Agua"],
 		["Delfin","Vive","Agua"],
 		["Ballena","Vive","Agua"],
 		["Gato","Vive","Tierra"],
 		["Oso","Vive","Tierra"],
 		["Tortuga","Vive","Tierra"],
+		["Tortuga","Vive","Agua"],
 		["Iguana","Vive","Tierra"],
 		["Gallo","Vive","Tierra"]
 	]
