@@ -1,19 +1,40 @@
-"""
-En el comentario del archivo anterior, hice varias cosas, 
-para poder sacar la matriz de probabilidades, 
-ahora hay que hacer un programa que a partir de 10 tweets genere la misma 
-matriz de probabilidades
-sabiendo de ante mano cuales son los de stream
+import json
+Conocimiento = False
+palabras = ["a","e","o","con", "la","de","el","los","al","es","de"]
 
-Sugiero esta estructura, para lo tweets
+with open ("tweets.json","r") as read_file:
+	data = json.load(read_file)
+	Conocimiento = data['tweets']
 
-{
-	"Tweets" : [
-		{"Stream":true, "texto":"Vamos a darle a Among Us con famosos"},
-		{"Stream":false, "texto":"El Fugitivo: La Historia en 1 Video"},
-	]
-}
+def stream(con):
+	lista = []
+	for e in con:
+		if e["Stream"] == True:
+			lista.append(e["texto"].split())
+	return elimina(lista)
 
-y debe generar el  json compatible con el programa de clasificacion
+def elimina(lista):
+	aux = []
+	lf = []
+	r = []
+	for e in lista:
+		c = 0
+		while (c < len(e)):
+			if (e[c] not in palabras):
+				aux = aux + [e[c]]
+			c += 1
+	for i in aux:
+		if i not in r:
+			r.append(i)
+			porcentaje = (aux.count(i)/(len(lista)))
+			lf.append([i,porcentaje])
+	return crea(lf)
 
-"""
+def crea(lista):
+    dic = {}
+    dic["Probabilidades"] = lista
+    with open ("Matriz.json","w") as file:
+        json.dump(dic,file)
+        return ("Matriz creada :",dic)
+ 
+print(stream(Conocimiento))
