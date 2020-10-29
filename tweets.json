@@ -1,0 +1,14 @@
+{
+	"tweets" : [
+		{"Stream":true, "texto":"Vamos a darle a Among Us con famosos"},
+		{"Stream":false, "texto":"El Fugitivo: La Historia en 1 Video"},
+		{"Stream":true, "texto":"Vamos a seguirle al Sheep Raider"},
+		{"Stream":false, "texto":"Nuevo video de la safa de los asesinos, La Historia en 1 video"},
+		{"Stream":true, "texto":"Vamos a darle a la nueva temporada de FALL GUYS"},
+		{"Stream":false, "texto":"Te exploto la cabeza lo se"},
+		{"Stream":true, "texto":"Vamos a seguirle al Bloodborne"},
+		{"Stream":false, "texto":"No ps una disculpa al patrón"},
+		{"Stream":true, "texto":"Vamos a seguirle al Crash Bandicoot"},
+		{"Stream":false, "texto":"Buenos dias jovenes"}
+	]
+}
