@@ -1,0 +1,12 @@
+{
+	"Grafo" : [
+		{"nodo":"Raiz", "ramas":"10 A B"},
+		{"nodo":"A", "ramas":"5 C D"},
+		{"nodo":"B", "ramas":"15 E F"},
+		{"nodo":"C", "ramas":"1"},
+		{"nodo":"D", "ramas":"9"},
+		{"nodo":"E", "ramas":"14"},
+		{"nodo":"F", "ramas":"16 G"},
+		{"nodo":"G", "ramas":"30"}
+	]
+}
