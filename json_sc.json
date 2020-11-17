@@ -1,0 +1,17 @@
+{
+	"Grafo" : [
+		{"nodo" : "A", "Opciones" :[["5","B"],["2","C"],["7","D"]]},
+		{"nodo" : "B", "Opciones" :[["2","C"],["4","F"]]},
+		{"nodo" : "C", "Opciones" :[["2","G"]]},
+		{"nodo" : "D", "Opciones" :[["2","G"]]},
+		{"nodo" : "E", "Opciones" :[["5","K"]]},
+		{"nodo" : "F", "Opciones" :[["1","H"],["4","E"]]},
+		{"nodo" : "G", "Opciones" :[["5","I"]]},
+		{"nodo" : "H", "Opciones" :[["4","E"],["4","K"]]},
+		{"nodo" : "I", "Opciones" :[["6","D"],["5","H"]]},
+		{"nodo" : "J", "Opciones" :[["6","I"]]},
+		{"nodo" : "K", "Opciones" :[["3","J"],["2","M"],["2","L"]]},
+		{"nodo" : "L", "Opciones" :[["15","A"]]},
+		{"nodo" : "M", "Opciones" :[["6","J"],["5","L"]]}
+	]
+}
